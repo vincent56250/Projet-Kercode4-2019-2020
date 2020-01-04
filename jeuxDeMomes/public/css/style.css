@@ -1,0 +1,416 @@
+/*couleur site
+ffaea0
+00a8ec(bleu)
+f59fbc(rose)
+f8f400(jaune)
+*/
+/*mini reset*/
+* {
+    /*reset de la page*/
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    /*enlever le bleu et le souligner par defaut des liens*/
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    /*enlever le bleu et le souligner par defaut des liens*/
+    text-decoration: none;
+    color: black;
+}
+
+ul {
+    /*pour enlever le puce des liste*/
+    list-style-type: none;
+}
+
+/*------------------------------------------------------------------------*/
+
+/*-----------reglage du corp de page------------------------*/
+body {
+    max-width: 1200px;
+    font-size: 16px;
+    font-family: "Arial";
+}
+
+/*reglage cookies*/
+#cookies {
+    width: 95%;
+    font-size: 1.3rem;
+    text-align: center;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    
+    position: absolute;
+    z-index: 10000;
+    background-color: #f59fbc;
+    opacity: 70%;
+}
+
+#cookies .ok,
+#cookies .refuser {
+    margin-top: -10px;
+    margin-bottom: 2%;
+    background-color: #00a8ec;
+    /* border: none; */
+}
+
+/*-----------reglage du boutton top--------------------*/
+a#cRetour{
+    border-radius:3px;
+    padding:10px;
+    font-size:15px;
+    text-align:center;
+    color:#fff;
+    background:rgba(0, 0, 0, 0.25);
+    position:fixed;
+    right:20px;
+    opacity:1;
+    z-index:99999;
+    transition:all ease-in 0.2s;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    text-decoration: none;
+  }
+  a#cRetour:before{ content: "\25b2"; }
+  a#cRetour:hover{
+    background:rgba(0, 0, 0, 1);
+    transition:all ease-in 0.2s;
+  }
+  a#cRetour.cInvisible{
+    bottom:-35px;
+    opacity:0;
+    transition:all ease-in 0.5s;
+  }
+  
+  a#cRetour.cVisible{
+    bottom:20px;
+    opacity:1;
+  }
+/*fil d ariane*/
+.fil_d_ariane {
+    display: flex;
+    padding-top: 15%;
+}
+
+.fil_d_ariane li {
+    padding: 0 5px;
+}
+
+.fil_d_ariane li a {
+    color: black;
+}
+
+.fil_d_ariane li a:hover {
+    color: #f8f400;
+}
+
+/*reglage du logo*/
+.logo {
+    position: absolute;
+    z-index: 99999;
+    width: 100px;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+
+/*style de la class active en JS*/
+.active {
+    height: 1.4rem;
+    background-color: #00a8ec;
+}
+
+/*----------------parametrage-du-menu-----------------------*/
+#menu {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(0, 0, 0);
+    width: 94.3%;
+    /*c'est une marge interieure du bloc*/
+    padding: 5px;
+    /*opaciter*/
+    opacity: 60%;
+    /*donne une hauteur*/
+    height: 40px;
+    /*pour faire passer le menu par dessus du slider*/
+    z-index: 9000;
+    position: absolute;
+}
+
+#menu ul {
+    color: white;
+    /*pour rendre flexible les bloc*/
+    display: flex;
+    padding-top: 10px;
+}
+
+#menu ul li a {
+    color: white;
+    margin: 0 10px;
+
+}
+
+/*----------- parametrage du menu-mobile apeller burger----------------*/
+#menu #menu-mobile,
+#menu .menu-mobile {
+    display: none;
+}
+
+/*----------fin menu-mobile--------------*/
+/*----------------------boite modal----------------------------------------*/
+/* The Modal (background) */
+.modal {
+    display: none;
+    /* Hidden by default */
+    position: fixed;
+    /* Stay in place */
+    z-index: 11000;
+    /* Sit on top */
+    padding-top: 100px;
+    /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    overflow: auto;
+    /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0);
+    /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.4);
+    /* Black w/ opacity */
+}
+
+/* Modal Content */
+.modal-content {
+    width: 80%;
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+/*----------animation de la boite modal----------*/
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+@keyframes animatetop {
+    from {
+        top: -300px;
+        opacity: 0
+    }
+
+    to {
+        top: 0;
+        opacity: 1
+    }
+}
+
+/* The Close Button */
+.close {
+    color: rgb(233, 10, 10);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    height: 25px;
+    padding: 2px 16px;
+    background-color: #00a8ec;
+    color: white;
+}
+
+.modal-header img {
+    float: left;
+    padding: 10px 10px;
+    width: 10%;
+}
+
+.modal-header h2 {
+    text-align: center;
+    font-size: 18px;
+}
+
+.modal-body {
+    width: 100%;
+    color: black;
+    padding: 2px 16px;
+}
+
+.modal-body .espace {
+    display: flex;
+    justify-content: space-evenly;
+    border-bottom: 3px solid blueviolet;
+}
+
+.modal-body .espace img {
+    margin: 1rem;
+    width: 45%;
+    border-radius: 8px;
+}
+
+.modal-body .formModal {
+    margin: 1rem;
+    display: flex;
+
+}
+
+.modal-body .formulaire {
+    margin-left: 12%;
+}
+
+.modal-body fieldset p {
+    margin: 5px;
+}
+
+.modal-body fieldset {
+    border: 2px solid rgb(101, 6, 253);
+    padding: 15px;
+}
+
+.modal-body fieldset input {
+    width: 35%;
+    float: right;
+}
+
+.modal-body input:hover {
+    background-color: #00a8ec;
+}
+
+.modal-body .conex {
+    margin-left: 3%;
+}
+
+.modal-body .inscription #btnInscription,
+.modal-body #connexion {
+    width: 30%;
+    margin-left: 35%;
+    margin-top: 3%;
+    background-color:#00a8ec ;
+}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #00a8ec;
+    color: white;
+}
+
+/*-----reseaux sociaux-----------------*/
+.reseaux a {
+    text-align: center;
+    padding: 16px;
+    font-size: 20px;
+}
+
+/*pour regler la taille des pictos*/
+.reseaux a img {
+    margin-bottom: 0.5rem;
+    /* padding: 1rem; */
+    width: 30px;
+}
+
+/*----------------------footer-------------------------*/
+footer {
+    display: flex;
+    flex-direction: column;
+    background-color: black;
+}
+
+.footertop {
+    display: flex;
+    justify-content: center;
+}
+
+.footertop ul {
+    background-color: #00a8ec;
+    margin: 15px;
+    width: 25%;
+    text-align: center;
+}
+.footertop li{
+    padding: 5px;
+}
+
+.footerbottom {
+    color: white;
+    text-align: center;
+}
+
+/*-------------plan du site----------------*/
+.plandusite h1 {
+    padding-top: 40px;
+    text-align: center;
+}
+
+.plandusite ul {
+    padding: 12px 0;
+    text-align: center;
+}
+
+.plandusite ul li {
+    padding: 5px;
+}
+
+/*-------------------page en maintenance---------------------------------------*/
+.maintenance img {
+    width: 100%;
+}
+
+/*-------------------page politique-------------------------*/
+.politique {
+    width: 90%;
+    font-size: 1rem;
+    padding: 40px 5px;
+}
+
+.politique h1 {
+    margin-bottom: 5%;
+    text-align: center;
+}
+
+.politique p {
+    margin: 5%;
+}
+
+/*--------------------------Mention legal----------------------------*/
+
+.mention {
+    padding: 40px 15px;
+}
+
+/*--------------------page 404*------------------------------------*/
+#erreur img {
+    width: 100%;
+}
+
+/*teste */

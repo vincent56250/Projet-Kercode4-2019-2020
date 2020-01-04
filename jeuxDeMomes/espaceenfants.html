@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Jeux de Mômes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--pour chaque page (referencement)-->
+    <meta name="description" content="Jeux De Mômes, Des activités, des ressources pour les enfants & les Parents!
+    Des solutions ludiques adaptés à l'apprentissage et la rééducation d'enfants & seniors différents." />
+    <meta name="keywords" content="Differents">
+    <!--feuille de style, la derniere ligne sera traiter en prioriter, 
+    plusieur liens pour bien decouper son css  afin de mieux si retrouver par la suite-->
+    <!-- <link rel="stylesheet" href="public/css/header.css">-->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/media.css">
+</head>
+
+<body>
+    <!--barre de cookie-->
+    <section id="cookies">
+        <p>
+            "Nous utilisons les cookies afin de fournir les services et fonctionnalités proposés sur notre site et afin
+            d’améliorer l’expérience de nos utilisateurs.
+            Les cookies sont des données qui sont téléchargés ou stockés sur votre ordinateur ou sur tout autre
+            appareil.
+        </p>
+        <!--onclik sa veut dire va cliker sur le bouton et la fonction c'est masquer les cookies-->
+        <button class="ok">
+            <a href="#" onclick="cachecookies()">ok</a>
+        </button>
+        <button class="refuser">
+            <a href="https://www.google.fr" target="_blank">refuser</a>
+        </button>
+    </section>
+
+    <!--petit bouton pour remonter en haut de la page-->
+    <button onclick="topButton()" id="myBtn" title="allez en haut">
+        <img src="public/images/chevron.png" class="top">
+    </button>
+    <!-----------------------------------------Header------------------------------>
+    <header class="top_page">
+        <!------------------------logo--header-------------------------------------------->
+        <img src="public/images/logo.png" alt="logo" class="logo img-circle">
+        <!----------------- menu navigation--------------------->
+        <nav id="menu">
+            <!-----------------menu mobile--menu burger------------>
+            <input type="checkbox" id="menu-mobile" role="button">
+            <label for="menu-mobile" class="menu-mobile">
+                <!--logo  du menu mobile-->
+                <img src="public/images/menu.png" alt="menu-mobile" title="menu-mobile">
+            </label>
+
+            <ul id="myMENU">
+                <!--j'ajoute l'element actif avec l'id-->
+                <li class="acceuil"><a href="index.html"><i class="fa fa-fw fa-home"></i> Accueil</a>
+                </li>
+                <li class="menu"><a href="blog.html"><i class="fa fa-pencil-square-o"></i> Blog</a></li>
+                <li class="menu"><a href="boutique.html"><i class="fa fa-cart-arrow-down"></i> Boutique</a></li>
+                <li class="menu"><a href="apropos.html"><i class="fa fa-vcard-o"></i> A propos</a></li>
+                <li class="menu"><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                <li class="menu"><a href="moncompte.html"><i class="fa fa-user-circle"></i> mon Compte</a></button>
+                </li>
+            </ul>
+            <!----------------------reseaux sociaux----------------------->
+            <figure class="reseaux">
+                <a href="https://fr-fr.facebook.com/">
+                    <img src="public/images/facebook.png" alt="logo_facebook" title="logo_facebook" class="img-fluid">
+                </a>
+                <a href="https://www.instagram.com/?hl=fr">
+                    <img src="public/images/instagram.png" alt="logo_instagram" title="logo_instagram"
+                        class="img-fluid">
+                </a>
+                <a href="https://pinterest.fr">
+                    <img src="public/images/pinterest.png" alt="logo_pinterest" title="logo_pinterest"
+                        class="img-fluid">
+                </a>
+            </figure>
+        </nav>
+    </header>
+    <!--on mais tout dans le main ,on lui met une class="contener" car par la suite ce sera plus simple pour bootstrap-->
+    <main class="contener">
+        <section class="enfants">
+            <img src="public/images/En_construction.jpg" alt="construction" title="construction">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/NBz-xRmohek" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </section>
+    </main>
+    <footer>
+        <section class=" footertop">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+            <ul>
+                <li><a href="page404.html">machin</a></li>
+                <li><a href="#">bidulle</a></li>
+                <li><a href="#">truc</a></li>
+                <li><a href="#">much</a></li>
+            </ul>
+            <ul>
+                <li><a href="page404.html">machin</a></li>
+                <li><a href="#">bidulle</a></li>
+                <li><a href="#">truc</a></li>
+                <li><a href="#">much</a></li>
+            </ul>
+        </section>
+        <section class="footerbottom">
+            <p>&copy;Greta 2019 tous droits réservés</p>
+            <a href="mentions-legales.html">Mentions Légales</a>
+            <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
+            <a href="plandusite.html">Plan du site</a>
+        </section>
+    </footer>
+    <!--mon scripts-->
+    <script type="text/javascript" src="public/js/active.js"></script>
+    <script type="text/javascript" src="public/js/scripts.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

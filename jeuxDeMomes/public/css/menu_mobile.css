@@ -1,0 +1,49 @@
+@media screen and (max-width:762px){
+
+    /*------quand cest cocher---'permet le click pour afficher le menu "deroulant"---------*/
+    #menu [type="checkbox"]:checked+label+ul {
+        display: block;
+        background-color: #00a8ec;
+        width: 25%;
+        margin: 0 auto;
+    }
+
+          /*------------menu mobile-----------*/
+    #menu {
+        /*permet de faire passer le menu par dessus la page et de pouvoir clicker dessus*/
+        position: relative;
+        text-align: center;
+        background-color: black;
+        height:auto;
+    }
+
+    #menu ul li {
+        display: block;
+        line-height: 34px;
+        font-size: 1.2rem;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    #menu .menu-mobile img {
+        width: 40px;
+    }
+
+    #menu .menu-mobile {
+        display: block;
+    }
+
+    #menu #search {
+        display: none;
+    }
+
+    #menu .menu-mobile {
+        /*permet d'afficher le menu-mobile*/
+        display: block;
+    }
+    /*---------------------------page accueil------------------------------------------------------*/
+    
+        
+}

@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Jeux de Mômes</title>
+    <!--permet a l'ordinateur d'afficher certain caractere comme les accent les trema-->
+    <meta charset="UTF-8">
+    <!--La width=device-width partie qui définit la largeur de la page pour suivre l'écran de la largeur du dispositif (qui varie en fonction de l'appareil).
+    La initial-scale=1partie définit le niveau de zoom initial lorsque la page est d' abord chargé par le navigateur.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--pour chaque page (referencement)--(referencement-- content=150 caractere pour decrire le site--)-->
+    <meta name="description" content="Jeux De Mômes, Des activités, des ressources pour les enfants & les Parents!
+    Des solutions ludiques adaptés à l'apprentissage et la rééducation d'enfants & seniors différents." />
+    <!--content= mettre un mots clé-->
+    <meta name="keywords" content="Differents">
+    <!--pour chaque page ( fin referencement)-->
+    <!--feuille boottrap 4 cdn-->
+    <!-- Bootstrap CSS 
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">-->
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--feuille de style, la derniere ligne sera traiter en prioriter, 
+    plusieur liens pour bien decouper son css  afin de mieux si retrouver par la suite-->
+    <!-- <link rel="stylesheet" href="public/css/header.css">-->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/menu_mobile.css">
+    <!--<link rel="stylesheet" href="public/css/media.css">-->
+</head>
+
+<body>
+    <!----------------------------barre de cookie----------------------------------->
+    <section id="cookies">
+        <p>
+            "Nous utilisons les cookies afin de fournir les services et fonctionnalités proposés sur notre site et afin
+            d’améliorer l’expérience de nos utilisateurs.
+            <b>Les cookies sont des données qui sont téléchargés ou stockés sur votre ordinateur ou sur tout autre
+                appareil.</b>
+        </p>
+        <!--onclik sa veut dire va cliker sur le bouton et la fonction c'est masquer les cookies-->
+        <button id="ok">
+            ok
+        </button>
+        <button id="refuser">
+            refuser
+        </button>
+    </section>
+    <!-----------------------------------------Header------------------------------>
+    <header id="haut">
+        <!------------------------logo--header-------------------------------------------->
+        <img src="public/images/logo.png" alt="logo" class="logo">
+        <!----------------- menu navigation--------------------->
+        <nav id="menu">
+            <!-----------------menu mobile--menu burger-------->
+            <input type="checkbox" id="menu-mobile" role="button">
+            <label for="menu-mobile" class="menu-mobile">
+                <!--logo  du menu mobile------>
+                <img src="public/images/menu.png" alt="menu-mobile" title="menu-mobile">
+            </label>
+            <!-----------------------menu--------------------------------->
+            <ul>
+                <!--j'ajoute l'element actif avec l'id monElement-->
+                <li id="monElement"><a href="index.html" target="myFrame"><i class="fa fa-fw fa-home"></i> Accueil</a>
+                </li>
+                <li><a href="blog.html" target="myFrame"><i class="fa fa-pencil-square-o"></i> Blog</a></li>
+                <li><a href="boutique.html" target="myFrame"><i class="fa fa-cart-arrow-down"></i> Boutique</a></li>
+                <li><a href="apropos.html" target="myFrame"><i class="fa fa-vcard-o"></i> A propos</a></li>
+                <li><a href="contact.html" target="myFrame"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                <li id="myBtnmodal">
+                    <a href="#" target="myFrame">
+                        <i class="fa fa-user-circle"></i> mon Compte
+                    </a>
+                </li>
+            </ul>
+            <!----------------------reseaux sociaux----------------------->
+            <figure class="reseaux">
+                <a href="https://fr-fr.facebook.com/">
+                    <img src="public/images/facebook.png" alt="logo_facebook" title="logo_facebook">
+                </a>
+                <a href="https://www.instagram.com/?hl=fr">
+                    <img src="public/images/instagram.png" alt="logo_instagram" title="logo_instagram">
+                </a>
+                <a href="https://pinterest.fr">
+                    <img src="public/images/pinterest.png" alt="logo_pinterest" title="logo_pinterest">
+                </a>
+            </figure>
+        </nav>
+        <!-------------------------- The Modal ----------------------------->
+        <section id="myModal" class="modal">
+            <!-- Modal content/ contenu modal -->
+            <div class="modal-content">
+
+                <header class="modal-header">
+                    <span class="close">&times;</span>
+                    <img src="public/images/logo.png">
+                    <h2>Jeux de Mômes</h2>
+                    
+                </header>
+                <!-- Modal body -->
+
+                <body class=" modal-body">
+                    <section class="espace">                        
+                            <img src="public/images/parent.jpg">                      
+                            <img src="public/images/espace_enfant.jpg">                        
+                    </section>
+                    <div class="formModal">
+                    <section  class="formulaire">
+                        <fieldset class="inscription">
+                            <legend>M'inscrire</legend>
+                            <p>
+                                <label for="lastName">Nom</label>
+                                <input type="text" id="lastName" placeholder="votre nom" required>
+                                <span id="noLastName"></span></p>
+                            <p>
+                                <label for="firstName">Prenom</label>
+                                <input type="text" id="firstName" placeholder="votre prenom" required>
+                                <span id="noFirstName"></span>
+                            </p>
+                            <p>
+                                <label for="date">Votre Date de Naissance</label>
+                                <input type="date" id="date" required>
+                                <span id="noDate"></span>
+                            </p>
+                            <p>
+                                <label for="eMail">Votre E-mail</label>
+                                <input type="email" id="eMail" placeholder="votre e-mail" required>
+                                <span id="noEmail"></span>
+                            </p>
+                            <p>
+                                <label for="password">Votre Mot de Passe</label>
+                                <input type="password" id="password" placeholder="password" required>
+                                <span id="noMdp"></span>
+                            </p>
+                            <p>
+                                <label for="confirmPassword">confirmez votre mot de
+                                    passe</label>
+                                <input type="password" id="confirmPassword" placeholder="confirm password" required>
+                                <span id="noConfirmMdp"></span>
+                            </p>
+                            <button type="submit" id='btnInscription'>M'inscrire</button>
+                        </fieldset>
+                    </section>
+<!------------------------------connexion a son espace------------------------>
+                    <section class="conex">
+                        <fieldset>
+                            <legend>Me connecter</legend>
+                            <p>
+                                <label for="identifiant">Mon identifiant</label>
+                                <input type="text" id="identifiant" placeholder=" identifiant">
+                            </p>
+                            <p>
+                                <label for="mdp">Votre mot de Passe</label>
+                                <input type="password" id="mdp" placeholder="password">
+                            </p>
+                            <button type="submit" id="connexion">Me connectez</button>
+                        </fieldset>
+                    </section>
+                </div>
+                </body>
+
+                <footer class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </footer>
+            </div>
+        </section>
+        <!-----------------slider fait maison -------------------->
+        <section id="slider">
+            <img id="slide" src="public/images/blog.jpg" alt="image blog" class="img-fluid">
+            <div id="precedent" onclick="ChangeSlide(-1)"> < </div>
+            <div id="suivant" onclick="ChangeSlide(1)"> > </div>
+        </section>
+         <!--petit bouton pour remonter en haut de la page-->
+         <div><a id="cRetour" class="cInvisible" href="#haut">retour en haut</a></div>
+    </headerid="haut">
+    <!--on mais tout dans le main ,on lui met une class="container", La .containerclasse fournit une réponse contenant largeur fixe-->
+    <main>
+        <!----------------------------------------premier bloc--------------------------------------------->
+        <h1>Jeux De Mômes</h1>
+        <section class="presentation">
+            <article>
+                <img src="public/images/kitzen.jpg" alt="espace personnaliser">
+                <h2>Espace Enfants</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Distinctio consequuntur quaerat quidem neque alias voluptates.
+                    Aliquam doloremque totam iusto repellat quia beatae nulla nostrum dolorem qui itaque,
+                    facilis
+                    fugiat
+                    reiciendis.
+                </p>
+                <button type="button" class="btn">Voir plus...
+                    <a href="espaceenfants.html.html"></a>
+                </button>
+            </article>
+            <article>
+                <img src="public/images/kitzen.jpg" alt="espace_parents">
+                <h2>Espace Parents</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Distinctio consequuntur quaerat quidem neque alias voluptates.
+                    Aliquam doloremque totam iusto repellat quia beatae nulla nostrum dolorem qui itaque,
+                    facilis
+                    fugiat
+                    reiciendis.</p>
+                <button type="button" class="btn">Voir plus...
+                    <a href="espaceparents.html"></a>
+                </button>
+            </article>
+            <article>
+                <img src="public/images/kitzen.jpg" alt="Blog"></a>
+                <h2>Blog</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Distinctio consequuntur quaerat quidem neque alias voluptates.
+                    Aliquam doloremque totam iusto repellat quia beatae nulla nostrum dolorem qui itaque,
+                    facilis
+                    fugiat
+                    reiciendis.</p>
+                <button type="button" class="btn">Voir plus...
+                    <a href="blog.html"></a>
+                </button>
+            </article>
+        </section>
+        <!--lien vers un diy-->
+        <a href="#"><img src="public/images/sapin-balles.png" alt="diy" class="diy"></a>
+        <!--------------------------------------section extrait boutique----------------------------->
+        <section class="produits">
+            <article>
+                <a href="boutique.html"><img src="public/images/kit-emotion.jpg" alt="kit emotion"></a>
+                <h4>Mon kit pour gérer mes émotions</h4>
+                <p>du texte</p>
+                <button class="price">40EUR</button>
+            </article>
+            <article>
+                <a href="boutique.html"><img src="public/images/kit-emotion.jpg" alt="kit emotion"></a>
+                <h4>Mon kit pour gérer mes émotions</h4>
+                <p>du texte</p>
+                <button class="price">40EUR</button>
+            </article>
+            <article>
+                <a href="boutique.html"><img src="public/images/kit-emotion.jpg" alt="kit emotion"></a>
+                <h4>Mon kit pour gérer mes émotions</h4>
+                <p>du texte</p>
+                <button class="price">40EUR</button>
+            </article>
+            <article>
+                <a href="boutique.html"><img src="public/images/kit-emotion.jpg" alt="kit emotion"></a>
+                <h4>Mon kit pour gérer mes émotions</h4>
+                <p>du texte</p>
+                <button class="price">40EUR</button>
+            </article>
+            <article>
+                <a href="boutique.html"><img src="public/images/kit-emotion.jpg" alt="kit emotion"></a>
+                <h4>Mon kit pour gérer mes émotions</h4>
+                <p>du texte</p>
+                <button class="price">40EUR</button>
+            </article>
+            <article>
+                <a href="boutique.html"><img src="public/images/kit-emotion.jpg" alt="kit emotion"></a>
+                <h4>Mon kit pour gérer mes émotions</h4>
+                <p>du texte</p>
+                <button class="price">40EUR</button>
+            </article>
+        </section>
+        <!-------------------------------------------------partie newsletter--------------------------------------->
+        <form id="newsletter" action="traitement.php" method="post">
+            <img src="public/images/illustration-newsletter.png">
+            <p><label for="email">Votre Email</label>
+                <!--required permet la validation automatique par le navigateur-->
+                <input type="email" name="email" id="email" placeholder="Email" required>
+                <button type="submit" value="valider">valider</button></p>
+        </form>
+    </main>
+    <!---------------------- pied de page----------------------------------------->
+    <footer>
+        <section class="footertop">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+            <ul>
+                <li><a href="page404.html">Uliss on a un probleme</a></li>
+                <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                <li> <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a></li>
+                <li><a href="plandusite.html">Plan du site</a></li>
+            </ul>
+            <ul>
+                <li><a href="http://www.trucsweb.com/tutoriels/javascript/retour-haut/">Btn Top</a></li>
+                <li><a href="testactive.html">active</a></li>
+                <li><a href="https://www.youtube.com/watch?v=4YQ4svkETS0">tuto slider auto</a></li>
+                <li><a href="https://lesdocs.fr/slider-javascript/">slider manuel</a></li>
+            </ul>
+        </section>
+        <p class="footerbottom">&copy;G.K 2019 tous droits réservés</p>
+    </footer>
+    <!--mon scripts-->
+    <script type="text/javascript" src="public/js/slider.js"></script>
+    <script type="text/javascript" src="public/js/modal.js"></script>
+    <script type="text/javascript" src="public/js/active.js"></script>
+    <script type="text/javascript" src="public/js/btntop.js"></script>
+    <script type="text/javascript" src="public/js/cookies.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body c>
+<!--http://www.trucsweb.com/tutoriels/asp/compression_et_mise_en_cache/-->
+
+</html>

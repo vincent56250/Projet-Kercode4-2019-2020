@@ -1,0 +1,95 @@
+/*------------mediaqueries plus petit au plus grand ----------*/
+@media screen and (max-width:576px) {
+    /*-----------page d'acceuil--------------------*/
+    
+
+    /*----------responsive contact------------------------*/
+    .formulaire #contact {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .formulaire #contact .message {
+        text-align: center;
+    }
+    /*------------------page politique de confidentialité-------------------------*/
+ 
+}
+
+@media screen and (max-width:992px) {
+    main {
+        background-color: rgb(192, 193, 255);
+    }
+
+    /*------------menu mobile-----------*/
+    #menu {
+        /*permet de faire passer le menu par dessus la page et de pouvoir clicker dessus*/
+        position: relative;
+        text-align: center;
+        background-color: rgb(22, 5, 255);
+        height: 40px;
+    }
+
+    #menu ul li {
+        display: block;
+        line-height: 34px;
+        font-size: 1.2rem;
+    }
+
+    #menu ul {
+        display: none;
+    }
+
+    #menu .menu-mobile img {
+        width: 40px;
+    }
+
+    #menu .menu-mobile {
+        display: block;
+    }
+
+    #menu #search {
+        display: none;
+    }
+
+    #menu .menu-mobile {
+        /*permet d'afficher le menu-mobile*/
+        display: block;
+    }
+    /*---------------------------page accueil------------------------------------------------------*/
+    /*------quand cest cocher---'permet le click pour afficher le menu "deroulant"---------*/
+    #menu [type="checkbox"]:checked+label+ul {
+        display: block;
+        background-color: aliceblue;
+        width: 25%;
+        margin: 0 auto;
+    }
+
+    /*-----------------Slider-------------------------------------*/
+    .slider-wrapper {
+        /*permet d'enlever l'affichage du slider*/
+        display: none;
+    }
+
+    /*---------------------------corps de page-------------*/
+    #titre_reseaux{
+        padding-top: 5%;
+    }
+    #one {
+        width: 100%;
+    }
+
+    .blog_news {
+        display: none;
+    }
+
+    /*pied de page*/
+    .footertop {
+        display: none;
+    }
+    /*--------------------------responsive mon compte-----------------------------*/
+    #compte_creation .moncompte
+    {
+        padding: 40px;
+    }
+}

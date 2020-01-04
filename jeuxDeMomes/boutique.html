@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <title>Jeux de Mômes</title>
+    <!--permet a l'ordinateur d'afficher certain caractere comme les accent les trema-->
+    <meta charset="UTF-8">
+    <!--La width=device-width partie qui définit la largeur de la page pour suivre l'écran de la largeur du dispositif (qui varie en fonction de l'appareil).
+                La initial-scale=1partie définit le niveau de zoom initial lorsque la page est d' abord chargé par le navigateur.-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!--pour chaque page (referencement)--(referencement-- content=150 caractere pour decrire le site--)-->
+    <meta name="description" content="Jeux De Mômes, Des activités, des ressources pour les enfants & les Parents!
+                Des solutions ludiques adaptés à l'apprentissage et la rééducation d'enfants & seniors différents." />
+    <!--content= mettre un mots clé-->
+    <meta name="keywords" content="Differents">
+    <!--pour chaque page ( fin referencement)-->
+    <!--feuille slider-->
+    <link rel="stylesheet" href="public/css/default/default.css" type="text/css" media="screen" />
+    <link rel="stylesheet" href="public/css/nivo-slider.css" type="text/css" media="screen" />
+
+    <!--feuille boottrap 4 cdn-->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <!-- Load an icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--feuille de style, la derniere ligne sera traiter en prioriter, 
+                plusieur liens pour bien decouper son css  afin de mieux si retrouver par la suite-->
+    <!-- <link rel="stylesheet" href="public/css/header.css">-->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="stylesheet" href="public/css/index.css">
+    <link rel="stylesheet" href="public/css/menu_mobile.css">
+    <!--<link rel="stylesheet" href="public/css/media.css">-->
+</head>
+
+<body>
+    <!--barre de cookie-->
+    <section id="cookies">
+        <p>
+            "Nous utilisons les cookies afin de fournir les services et fonctionnalités proposés sur notre site et afin
+            d’améliorer l’expérience de nos utilisateurs.
+            Les cookies sont des données qui sont téléchargés ou stockés sur votre ordinateur ou sur tout autre
+            appareil.
+        </p>
+        <!--onclik sa veut dire va cliker sur le bouton et la fonction c'est masquer les cookies-->
+        <button class="ok">
+            <a href="#" onclick="cachecookies()">ok</a>
+        </button>
+        <button class="refuser">
+            <a href="https://www.google.fr" target="_blank">refuser</a>
+        </button>
+    </section>
+
+    <!--petit bouton pour remonter en haut de la page-->
+    <button onclick="topButton()" id="myBtn" title="allez en haut">
+        <img src="public/images/chevron.png" class="top">
+    </button>
+    <!-----------------------------------------Header------------------------------>
+    <header class="top_page">
+        <!------------------------logo--header-------------------------------------------->
+        <img src="public/images/logo.png" alt="logo" class="logo img-circle">
+        <!----------------- menu navigation--------------------->
+        <nav id="menu" class="topnav">
+            <!-----------------menu mobile--menu burger-------->
+            <input type="checkbox" id="menu-mobile" role="button">
+            <label for="menu-mobile" class="menu-mobile">
+                <!--logo  du menu mobile------>
+                <img src="public/images/menu.png" alt="menu-mobile" title="menu-mobile">
+            </label>
+            <ul>
+                <!--j'ajoute l'element actif avec l'id-->
+                <li class="accueil"><a href="index.html"><i class="fa fa-fw fa-home"></i> Accueil</a>
+                </li>
+                <li class="menu"><a href="blog.html"><i class="fa fa-pencil-square-o"></i> Blog</a></li>
+                <li class="menu"><a href="boutique.html"><i class="fa fa-cart-arrow-down"></i> Boutique</a></li>
+                <li class="menu"><a href="apropos.html"><i class="fa fa-vcard-o"></i> A propos</a></li>
+                <li class="menu"><a href="contact.html"><i class="fa fa-fw fa-envelope"></i> Contact</a></li>
+                <li class="menu" id="myBtnmodal">
+                    <a href="#">
+                        <i class="fa fa-user-circle"></i> mon Compte
+                    </a>
+
+                </li>
+            </ul>
+            <!----------------------reseaux sociaux----------------------->
+            <figure class="reseaux">
+                <a href="https://fr-fr.facebook.com/">
+                    <img src="public/images/facebook.png" alt="logo_facebook" title="logo_facebook" class="img-fluid">
+                </a>
+                <a href="https://www.instagram.com/?hl=fr">
+                    <img src="public/images/instagram.png" alt="logo_instagram" title="logo_instagram"
+                        class="img-fluid">
+                </a>
+                <a href="https://pinterest.fr">
+                    <img src="public/images/pinterest.png" alt="logo_pinterest" title="logo_pinterest"
+                        class="img-fluid">
+                </a>
+            </figure>
+        </nav>
+        <!-- The Modal -->
+        <div id="myModal" class="modal">
+
+            <!-- Modal content -->
+
+            <div class="modal-content">
+
+                <div class="modal-header">
+                    <img src="public/images/logo.png">
+                    <h2>Jeux de Mômes</h2>
+                    <span class="close">&times;</span>
+                </div>
+                <!-- Modal body -->
+                <div class=" modal-body container">
+                    <div class="row">
+                        <section class="col-md-6">
+                            <img src="public/images/parent.jpg" class="rounded-circle img-fluid img-border">
+                        </section>
+                        <section class="col-md-6">
+                            <img src="public/images/espace_enfant.jpg" class="rounded-circle img-fluid img-border">
+                        </section>
+                        <hr>
+                    </div>
+
+                    <div class="row ">
+                        <section class="col 12 col-md-6">
+                            <fieldset class="inscription">
+                                <legend>M'inscrire</legend>
+                                <p>
+                                    <label for="nom">Nom</label>
+                                    <input type="text" id="nom" placeholder="votre nom">
+                                </p>
+                                <p>
+                                    <label for="prenom">Prenom</label>
+                                    <input type="text" id="prenom" placeholder="votre prenom">
+                                </p>
+                                <p>
+                                    <label for="date">Votre Date de Naissance</label>
+                                    <input type="date" id="date">
+                                </p>
+                                <p>
+                                    <label for="email">Votre E-mail</label>
+                                    <input type="email" id="email" placeholder="votre e-mail">
+                                </p>
+                                <p>
+                                    <label for="password">Votre Mot de Passe</label>
+                                    <input type="password" id="password" placeholder="password">
+                                </p>
+                                <p>
+                                    <label for="confirmPassword">confirmez votre mot de
+                                        passe</label>
+                                    <input type="password" id="confirmPassword" placeholder="confirm password">
+                                </p>
+                                <button type="submit">M'inscrire</button>
+                            </fieldset>
+                        </section>
+                        <section class="col-md-6">
+                            <fieldset>
+                                <legend>Me connecter</legend>
+                                <p>
+                                    <label for="identifiant">Mon identifiant</label>
+                                    <input type="text" id="identifiant" placeholder=" identifiant">
+                                </p>
+                                <p>
+                                    <label for="mdp">Votre mot de Passe</label>
+                                    <input type="password" id="mdp" placeholder="password">
+                                </p>
+                                <button type="submit">Me connectez</button>
+                            </fieldset>
+                        </section>
+                    </div>
+                </div>
+
+                <div class="modal-footer">
+                    <h3>Modal Footer</h3>
+                </div>
+            </div>
+
+        </div>
+    </header>
+    <main class="container">
+        <ul class="fil_d_ariane">
+            <li><a href="index.html">Accueil > </a></li>
+            <li><a href="blog.html">blog > </a></li>
+            <li>Boutique</li>
+        </ul>
+        <img src="public/images/En_construction.jpg">
+    </main>
+    <footer>
+        <section class=" footertop">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="apropos.html">A propos</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="boutique.html">Boutique</a></li>
+            </ul>
+            <ul>
+                <li><a href="page404.html">machin</a></li>
+                <li><a href="#">bidulle</a></li>
+                <li><a href="#">truc</a></li>
+                <li><a href="#">much</a></li>
+            </ul>
+            <ul>
+                <li><a href="page404.html">machin</a></li>
+                <li><a href="#">bidulle</a></li>
+                <li><a href="#">truc</a></li>
+                <li><a href="#">much</a></li>
+            </ul>
+        </section>
+        <section class="footerbottom">
+            <p>&copy;Greta 2019 tous droits réservés</p>
+            <a href="mentions-legales.html">Mentions Légales</a>
+            <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
+            <a href="plandusite.html">Plan du site</a>
+        </section>
+    </footer>
+    <!--mon scripts-->
+    <script type="text/javascript" src="public/js/active.js"></script>
+    <script type="text/javascript" src="public/js/scripts.js"></script>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
+    </script>
+</body>
+
+</html>

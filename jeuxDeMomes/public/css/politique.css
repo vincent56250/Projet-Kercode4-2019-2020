@@ -1,0 +1,34 @@
+/*fil d ariane*/
+.fil_d_ariane {
+    display: flex;
+    padding-top: 5%;
+}
+
+.fil_d_ariane li {
+    padding: 0 5px;
+}
+
+.fil_d_ariane li a {
+    color: black;
+}
+
+.fil_d_ariane li a:hover {
+    color: #f8f400;
+}
+
+.politique{
+    margin-top: 10px;
+    text-align: justify;
+    font-size: 16px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+.politique h2{
+    text-decoration: underline;
+}
+.politique span{
+    font-weight: bold;
+}
+.politique h3,
+.politique h4{
+    font-weight: bold;
+}

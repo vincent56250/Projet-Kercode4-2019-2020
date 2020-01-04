@@ -1,0 +1,32 @@
+/*fil d ariane*/
+.fil_d_ariane {
+    display: flex;
+    padding-top: 5%;
+}
+
+.fil_d_ariane li {
+    padding: 0 5px;
+}
+
+.fil_d_ariane li a {
+    color: black;
+}
+
+.fil_d_ariane li a:hover {
+    color: #f8f400;
+}
+.mention{
+    margin-top: 10%;
+}
+.mention h1{
+    text-align: center;
+    text-decoration: underline;
+    padding-bottom: 10px;
+}
+.mention h2,
+.mention h3{
+    font-weight: bold;
+}
+.mention a{
+    color: blue
+}
