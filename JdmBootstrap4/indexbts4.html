@@ -20,7 +20,7 @@
 <body class="container-fluid m-0 p-0">
     <!--petit bouton pour remonter en haut de la page-->
     <button onclick="topFunction()" id="monBtn" title="allez en haut"><i class="fa fa-angle-double-up"></i></button>
-    <header >
+    <header>
         <!--navbar-expand-sm=permet de l'aficher quand il diminue-->
         <nav class="navbar navbar-expand-lg bg-dark">
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
@@ -35,7 +35,7 @@
                         <li class="nav-item mr-3">
                             <button type="button" class="btn btn-dark">
                                 <a class="active" href="indexbts4.html">
-                                    <i class="fa fa-fw fa-home active" ></i>
+                                    <i class="fa fa-fw fa-home active"></i>
                                     Accueil
                                 </a>
                             </button>
@@ -103,50 +103,46 @@
 
                                             <div class="row ">
                                                 <section class="col-12 col-md-6 col-lg-6">
-                                                    <fieldset class="inscription">
+                                                    <fieldset class="inscription d-flex flex-wrap p-1">
                                                         <legend>M'inscrire</legend>
-                                                        <p>
-                                                            <label for="nom">Nom</label>
-                                                            <input type="text" id="nom" placeholder="votre nom">
+                                                        <!---------------nom/prenom---------------->
+
+                                                        <p class="col-6">
+                                                            <input type="text" id="nom" placeholder="Nom" class="form-control">
                                                         </p>
-                                                        <p>
-                                                            <label for="prenom">Prenom</label>
-                                                            <input type="text" id="prenom" placeholder="votre prenom">
+                                                        <p class="col-6">
+                                                            <input type="text" id="prenom" placeholder="Prenom" class="form-control">
                                                         </p>
-                                                        <p>
-                                                            <label for="date">Votre Date de Naissance</label>
-                                                            <input type="date" id="date">
+                                                        <!------------date de naissance-------------->
+                                                        <p class="col-12">
+                                                            <label for="date">Date de Naissance</label>
+                                                            <input type="date" id="date" placeholder="votre date de naissance">
                                                         </p>
-                                                        <p>
-                                                            <label for="email">Votre E-mail</label>
-                                                            <input type="email" id="email" placeholder="votre e-mail">
+                                                        <p class="col-12">
+                                                            <input type="email" id="email" class="form-control" placeholder="votre e-mail">
                                                         </p>
-                                                        <p>
-                                                            <label for="password">Votre Mot de Passe</label>
-                                                            <input type="password" id="password" placeholder="password">
+                                                        <p class="col-6">
+                                                            <input type="password" id="password" class="form-control" placeholder="password">
                                                         </p>
-                                                        <p>
-                                                            <label for="confirmPassword">confirmez votre mot de
-                                                                passe</label>
-                                                            <input type="password" id="confirmPassword"
-                                                                placeholder="confirm password">
+                                                        <p class="col-6">
+                                                            <input type="password" id="confirmPassword" class="form-control" placeholder="confirm password">
                                                         </p>
-                                                        <button type="submit">M'inscrire</button>
+                                                        <button type="submit" class="btn btn-outline-success btn-block">M'inscrire</button>
                                                     </fieldset>
                                                 </section>
                                                 <section class="col-12 col-md-6 col-lg-6">
-                                                    <fieldset>
+                                                    <fieldset class="p-3">
                                                         <legend>Me connecter</legend>
-                                                        <p>
+                                                        <p class="text-center">
                                                             <label for="identifiant">Mon identifiant</label>
                                                             <input type="text" id="identifiant"
                                                                 placeholder=" identifiant">
                                                         </p>
-                                                        <p>
+                                                        <p class="text-center">
                                                             <label for="mdp">Votre mot de Passe</label>
                                                             <input type="password" id="mdp" placeholder="password">
                                                         </p>
-                                                        <button type="submit">Me connectez</button>
+                                                        <button type="submit" class="btn btn-outline-success btn-block" >Me connectez</button>
                                                     </fieldset>
                                                 </section>
                                             </div>
@@ -193,32 +189,24 @@
                     <img src="public/img/blog.jpg" alt="blog">
                     <div class="carousel-caption">
                         <a href="#" class="btn btn-info" role="button" target="_blank">Blog</a>
-                        <p>Allez au blog</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="public/img/boutique.jpg" alt="boutique" class="img-fluid">
                     <div class="carousel-caption">
                         <a href="#" class="btn btn-info" role="button" target="_blank">Boutique</a>
-                        <p>Allez a la Boutique</p>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="public/img/espace_enfant.jpg" alt="Enfants" class="img-fluid">
                     <div class="carousel-caption">
-                        <a href="#" class="btn btn-info" role="button" target="_blank">
-                            Espace Enfants
-                        </a>
-                        <p>Un espace dédier au Enfants</p>
+                        <a href="#" class="btn btn-info" role="button" target="_blank">Espace Enfants</a>
                     </div>
                 </div>
                 <div class="carousel-item">
                     <img src="public/img/parent.jpg" alt="parents" class="img-fluid">
                     <div class="carousel-caption">
-                        <a href="#" class="btn btn-info" role="button" target="_blank">
-                            Espace Parents
-                        </a>
-                        <p>Un Espace pour les parents</p>
+                        <a href="#" class="btn btn-info" role="button" target="_blank">Espace Parents</a>
                     </div>
                 </div>
             </div>
@@ -233,84 +221,57 @@
         </section>
     </header>
     <main class="container">
-        <h1 class="m-3 text-sm-center font-weight-bold">Jeux De Mômes</h1>
+        <h1 class="m-3 text-center display-1 font-weight-bold">Jeux De Mômes</h1>
         <!----------------------------------------premier bloc--------------------------------------------->
         <section class=" row presentation">
-            
-            <!-- <div class="row"> -->
-                <!---------------------------------------------espace enfants------------------------------------------------------>
-                <article class="col-4 col-md-4 col-lg-4">
-                    <div class="our-team-main">
-                        <figure class="team-front">
-                            <img src="public/img/espace_enfant.jpg" alt="espace Enfants" class="img-fluid">
-                            <h3>Espace Enfants</h3>
-                            <p>jeux, activiter diy, apprentissage</p>
-                        </figure>
-                        <div class="team-back">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                            </p>
-                            <button type="button" class="btn btn-info btn-sm ml-5 mr-5 mt-2 mb-2">Voir plus...
-                                <a href="espaceenfantsbts4.html.html"></a>
-                            </button>
-                        </div>
-                    <!-- </div> -->
-                </article>
-                <!--------------------------------------------espace parents----------------------------------------------------------->
-                <article class="col-4 col-md-4 col-lg-4">
-                    <div class="our-team-main">
-                        <figure class="team-front">
-                            <img src="public/img/parent.jpg" alt="espace Enfants" class="img-fluid">
-                            <h3>Espace Parents</h3>
-                            <p>Ressource, article, echange, idee</p>
-                        </figure>
-                        <div class="team-back">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            <button type="button" class="btn btn-info btn-sm ml-5 mr-5 mt-2 mb-2">Voir plus...
-                                <a href="espaceparentsbts4.html"></a>
-                            </button>
-                        </div>
+            <!---------------------------------------------espace enfants------------------------------------------------------>
+            <article class="col-4 col-md-4 col-lg-4">
+                <div class="our-team-main">
+                    <figure class="team-front">
+                        <img src="public/img/espace_enfant.jpg" alt="espace Enfants" class="img-fluid">
+                        <h3>Espace Enfants</h3>
+                        <p>jeux, activiter diy, apprentissage</p>
+                    </figure>
+                    <div class="team-back">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                        </p>
+                        <button type="button" class="btn btn-info btn-sm ml-5 mr-5 mt-2 mb-2">Voir plus...
+                            <a href="espaceenfantsbts4.html.html"></a>
+                        </button>
                     </div>
-                </article>
-                <!-------------------------------------blog------------------------------------------------------------>
-                <article class="col-4 col-md-4 col-lg-4">
-                    <div class="our-team-main">
-                        <figure class="team-front">
-                            <img src="public/img/blog.jpg" alt="espace Enfants" class="img-fluid">
-                            <h3>Blog</h3>
-                            <p>jeux, activiter diy, apprentissage</p>
-                        </figure>
-                        <div class="team-back">
-                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
-                            <button type="button" class="btn btn-info btn-sm ml-5 mr-5 mt-2 mb-2">Voir plus...
-                                <a href="blogbts4.html"></a>
-                            </button>
-                        </div>
+            </article>
+            <!--------------------------------------------espace parents----------------------------------------------------------->
+            <article class="col-4 col-md-4 col-lg-4">
+                <div class="our-team-main">
+                    <figure class="team-front">
+                        <img src="public/img/parent.jpg" alt="espace Enfants" class="img-fluid">
+                        <h3>Espace Parents</h3>
+                        <p>Ressource, article, echange, idee</p>
+                    </figure>
+                    <div class="team-back">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-info btn-sm ml-5 mr-5 mt-2 mb-2">Voir plus...
+                            <a href="espaceparentsbts4.html"></a>
+                        </button>
                     </div>
-                </article>
-                <!--<article class="col-4 col-md-4 col-lg-4 shadow p-4 mb-4 ">
-                    <img src="public/img/kitzen.jpg" alt="espace_parents" class="img-fluid">
-                    <h2>Espace Parents</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Distinctio consequuntur quaerat quidem neque alias voluptates.
-                        Aliquam doloremque totam iusto repellat quia beatae nulla nostrum dolorem qui itaque, facilis
-                        fugiat
-                        reiciendis.</p>
-                    <button type="button" class="btn">Voir plus...
-                        <a href="espaceparents.html"></a>
-                    </button>
-                </article>
-                <article class="col-4 col-md-4 col-lg-4 shadow p-4 mb-4 ">
-                    <img src="public/img/kitzen.jpg" alt="blog" class="img-fluid"></a>
-                    <h2>Blog</h2>
-                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-                        Distinctio consequuntur quaerat quidem neque alias voluptates.
-                        Aliquam doloremque totam iusto repellat quia beatae nulla nostrum dolorem qui itaque, facilis
-                        fugiat
-                        reiciendis.</p>
-                    <button type="button" class="btn">Voir plus...
-                        <a href="blog.html"></a>
-                    </button>
-                </article>-->
+                </div>
+            </article>
+            <!-------------------------------------blog------------------------------------------------------------>
+            <article class="col-4 col-md-4 col-lg-4">
+                <div class="our-team-main">
+                    <figure class="team-front">
+                        <img src="public/img/blog.jpg" alt="espace Enfants" class="img-fluid">
+                        <h3>Blog</h3>
+                        <p>jeux, activiter diy, apprentissage</p>
+                    </figure>
+                    <div class="team-back">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit.</p>
+                        <button type="button" class="btn btn-info btn-sm ml-5 mr-5 mt-2 mb-2">Voir plus...
+                            <a href="blogbts4.html"></a>
+                        </button>
+                    </div>
+                </div>
+            </article>
             </div>
             <!------------------------------------img diy----------------------------------------------------->
             <img src="public/img/sapin-balles.jpg" alt="diy" class="diy img-fluid mb-4">
@@ -318,7 +279,6 @@
         <!---------------------------------2eme bloc-------------------------------------------------------->
         <section class="container produits">
             <section class="row">
-
                 <article class="col-4 col-md-4 col-lg-4">
                     <div class="our-team-main">
                         <figure class="team-front">
@@ -343,12 +303,14 @@
                         <figure class="team-front">
                             <img src="public/img/kitmacolere.jpg" alt="espace Enfants" class="img-fluid">
                             <h3>kit colere</h3>
-                            <p>Vous y trouverez des solutions pour ne pas arriver à l’état de crise, mais aussi pour apprendre aux enfants à se calmer seuls.
+                            <p>Vous y trouverez des solutions pour ne pas arriver à l’état de crise, mais aussi pour
+                                apprendre aux enfants à se calmer seuls.
                             </p>
                         </figure>
                         <div class="team-back">
-                            <p>                                
-                                Ce lot contient : sac en toile, Retour au calme, volcan des émotions, affiche retour au calme, demi-lune manimo.
+                            <p>
+                                Ce lot contient : sac en toile, Retour au calme, volcan des émotions, affiche retour au
+                                calme, demi-lune manimo.
                                 Dès 4 ans.
                             </p>
                             <span class="price"> 40 eur</span>
@@ -377,36 +339,8 @@
                         </div>
                     </div>
                 </article>
-                <!-- <article class="col-4 col-md-4 col-lg-4 border border-primary">
-                        <figure class="team-front text-center">
-                            <a href="boutique.html">
-                                <img src="public/img/kit-emotion.jpg" alt="kit emotion" class="img-fluid">
-                            </a>
-                            <h4>Mon kit pour gérer mes émotions</h4>
-                            <p class="price card-text">40 Eur</p>
-                        </figure>
-                    </article>
-                    <article class=" col-4 col-md-4 col-lg-4 border border-primary">
-                        <figure class="card-body text-center">
-                            <a href="boutique.html">
-                                <img src="public/img/kit-emotion.jpg" alt="kit emotion" class="img-fluid">
-                            </a>
-                            <h4>Mon kit pour gérer mes émotions</h4>
-                            <p class="price card-text">40 Eur</p>
-                        </figure>
-                    </article>
-                    <article class="col-4 col-md-4 col-lg-4 border border-primary">
-                        <figure class="card-body text-center">
-                            <a href="boutique.html">
-                                <img src="public/img/kit-emotion.jpg" alt="kit emotion" class="img-fluid">
-                            </a>
-                            <h4>Mon kit pour gérer mes émotions</h4>
-                            <p class="price card-text">40 Eur</p>
-                        </figure>
-                    </article>-->
-
             </section>
-            <form id="newsletter"  class="text-center" action="traitement.php" method="post">
+            <form id="newsletter" class="text-center" action="traitement.php" method="post">
                 <img src="public/img/illustration-newsletter.png" class="img-fluid">
                 <p class="bg-info p-4"><label for="email" class="pr-1">Votre Email : </label>
                     <input type="email" name="email" id="email" placeholder="Email">
@@ -415,36 +349,104 @@
         </section>
     </main>
     <footer class="container-fluid bg-dark">
+
+        <!-----------------------------reseaux--------------------------------->
+        <div class="box shadow p-4 mb-4 border border-primary">
+            <div class="container">
+                <section class="row">
+                    <!-------------------fbook---------------------------------------->
+                    <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                        <aside class="box-part text-center">
+
+                            <i class="fa fa-facebook fa-3x" aria-hidden="true"></i>
+
+                            <div class="title">
+                                <h4>Facebook</h4>
+                            </div>
+
+                            <div class="text">
+                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
+                                    scripta ocurreret qui ad.</span>
+                            </div>
+
+                            <a href="#">Learn More</a>
+
+                        </aside>
+                    </article>
+                    <!--------------------instagram-------------------------------------->
+                    <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                        <aside class="box-part text-center">
+
+                            <i class="fa fa-instagram fa-3x" aria-hidden="true"></i>
+
+                            <div class="title">
+                                <h4>Instagram</h4>
+                            </div>
+
+                            <div class="text">
+                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
+                                    scripta ocurreret qui ad.</span>
+                            </div>
+
+                            <a href="#">Learn More</a>
+
+                        </aside>
+                    </article>
+                    <!------------------------------pinterest--------------------------->
+                    <article class="col-lg-4 col-md-4 col-sm-4 col-xs-12">
+
+                        <aside class="box-part text-center">
+
+                            <i class="fa fa-pinterest-p fa-3x" aria-hidden="true"></i>
+
+                            <div class="title">
+                                <h4>Pinterest</h4>
+                            </div>
+
+                            <div class="text">
+                                <span>Lorem ipsum dolor sit amet, id quo eruditi eloquentiam. Assum decore te sed. Elitr
+                                    scripta ocurreret qui ad.</span>
+                            </div>
+
+                            <a href="#">Learn More</a>
+
+                        </aside>
+                    </article>
+                </section>
+            </div>
+        </div>
+        <!-------------------------------pied de page------------------------------------->
         <div class="container">
-            <section class="row footertop justify-content-center shadow p-4 mb-4">
-                <ul class="col-12 col-md-4 col-lg-4 text-center ">
+            <section class="row footertop">
+                <article class="col-12 col-md-3 col-lg-3">
+                    <h2>Jeux de Mômes</h2>
+                    <p>20, Avenue Winstone churchill<br>56000 VANNES<br>tel: 02.97.55.99.33</p>
+                </article>
+                <div class=" col-12 col-md-3 col-lg-3">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.9200117362298!2d-2.7750422852591687!3d47.64712119317253!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48101c1e45bf9d89%3A0xf1b4ec0fcc4d768d!2s20%20Rue%20Winston%20Churchill%2C%2056000%20Vannes!5e0!3m2!1sfr!2sfr!4v1578149354549!5m2!1sfr!2sfr"
+                        frameborder="0" style="border:0;" allowfullscreen="" class="img-fluid">
+                    </iframe>
+                </div>
+                <!------------------------------------liens ------------------------------------------------------------------------->
+                <ul class="col-12 col-md-3 col-lg-3 text-center ">
                     <li><a href="index.html">Accueil</a></li>
                     <li><a href="apropos.html">A propos</a></li>
                     <li><a href="contact.html">Contact</a></li>
                     <li><a href="boutique.html">Boutique</a></li>
                 </ul>
-                <!------------------------------------liens vers les reseaux------------------------------------------------------>
-                <figure class="col-12 col-md-4 col-lg-4 pt-5 text-center reseaux ">
-                    <a href="https://fr-fr.facebook.com/"><img src="public/img/facebook.png" class="img-fluid p-1" alt="logo_facebook"
-                            title="logo_facebook"></a>
-                    <a href="https://www.instagram.com/?hl=fr"><img src="public/img/instagram.png" class="img-fluid p-1" alt="logo_instagram"
-                            title="logo_instagram"></a>
-                    <a href="https://pinterest.fr"><img src="public/img/pinterest.png" class="img-fluid p-1" alt="logo_pinterest"
-                            title="logo_pinterest"></a>
-                </figure>
-                <!------------------------------------liens ------------------------------------------------------------------------->
-                <ul class="col-12 col-md-4 col-lg-4 ">
+
+                <ul class="col-12 col-md-3 col-lg-3">
                     <li><a href="page404.html">page 404</a></li>
-                    <li><a href="#">bidulle</a></li>
-                    <li><a href="#">truc</a></li>
-                    <li><a href="#">much</a></li>
+                    <li><a href="mentions-legales.html">Mentions Légales</a></li>
+                    <li><a href="politiquedeconfidentialite.html">Politique de Confidentialité</a></li>
+                    <li><a href="plandusite.html">Plan du site</a></li>
                 </ul>
             </section>
             <section class="row footerbottom justify-content-around">
                 <p>&copy;G.K 2019 tous droits réservés</p>
-                <a href="mentions-legales.html">Mentions Légales</a>
-                <a href="politiquedeconfidentialite.html">Politique de Confidentialité</a>
-                <a href="plandusite.html">Plan du site</a>
             </section>
         </div>
     </footer>
