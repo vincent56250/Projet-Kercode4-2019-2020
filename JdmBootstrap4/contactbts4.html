@@ -110,24 +110,24 @@
                                                         <!---------------nom/prenom---------------->
 
                                                         <p class="col-6">
-                                                            <input type="text" id="nom" placeholder="Nom" class="form-control">
+                                                            <input type="text" id="nom" placeholder="Nom" class="form-control" required>
                                                         </p>
                                                         <p class="col-6">
-                                                            <input type="text" id="prenom" placeholder="Prenom" class="form-control">
+                                                            <input type="text" id="prenom" placeholder="Prenom" class="form-control" required>
                                                         </p>
                                                         <!------------date de naissance-------------->
                                                         <p class="col-12">
                                                             <label for="date">Date de Naissance</label>
-                                                            <input type="date" id="date" placeholder="votre date de naissance">
+                                                            <input type="date" id="date" placeholder="votre date de naissance" required>
                                                         </p>
                                                         <p class="col-12">
-                                                            <input type="email" id="email" class="form-control" placeholder="votre e-mail">
+                                                            <input type="email" id="email" class="form-control" placeholder="votre e-mail" required>
                                                         </p>
                                                         <p class="col-6">
-                                                            <input type="password" id="password" class="form-control" placeholder="password">
+                                                            <input type="password" id="password" class="form-control" placeholder="password" required>
                                                         </p>
                                                         <p class="col-6">
-                                                            <input type="password" id="confirmPassword" class="form-control" placeholder="confirm password">
+                                                            <input type="password" id="confirmPassword" class="form-control" placeholder="confirm password" required>
                                                         </p>
                                                         <button type="submit" class="btn btn-outline-success btn-block">M'inscrire</button>
                                                     </fieldset>
@@ -138,11 +138,11 @@
                                                         <p class="text-center">
                                                             <label for="identifiant">Mon identifiant</label>
                                                             <input type="text" id="identifiant"
-                                                                placeholder=" identifiant">
+                                                                placeholder=" identifiant" required>
                                                         </p>
                                                         <p class="text-center">
                                                             <label for="mdp">Votre mot de Passe</label>
-                                                            <input type="password" id="mdp" placeholder="password">
+                                                            <input type="password" id="mdp" placeholder="password" required>
                                                         </p>
                                                         <button type="submit" class="btn btn-outline-success btn-block" >Me connectez</button>
                                                     </fieldset>
@@ -195,28 +195,28 @@
                         <div class="form-group">
                           <label class="control-label col-sm-2" for="fname">Nom:</label>
                           <div class="col-sm-10">          
-                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                            <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                           </div>
                         </div>
                         <!--prenom-->
                         <div class="form-group">
                           <label class="control-label col-sm-2" for="lname">Prenom:</label>
                           <div class="col-sm-10">          
-                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                            <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
                           </div>
                         </div>
                         <!--tel-->
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="email">Télephone:</label>
+                            <label class="control-label col-sm-2" for="tel">Télephone:</label>
                             <div class="col-sm-10">
-                              <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel">
+                              <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel" required>
                             </div>
                           </div>
                         <!--email-->
                         <div class="form-group">
                           <label class="control-label col-sm-2" for="email">Email:</label>
                           <div class="col-sm-10">
-                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+                            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email" required>
                           </div>
                         </div>
                         <!--message-->
@@ -321,10 +321,10 @@
                 </div>
                 <!------------------------------------liens ------------------------------------------------------------------------->
                 <ul class="col-12 col-md-3 col-lg-3 text-center ">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="apropos.html">A propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="boutique.html">Boutique</a></li>
+                    <li><a href="indexbts4.html">Accueil</a></li>
+                    <li><a href="aproposbts4.html">A propos</a></li>
+                    <li><a href="contactbts4.html">Contact</a></li>
+                    <li><a href="boutiquebts4.html">Boutique</a></li>
                 </ul>
 
                 <ul class="col-12 col-md-3 col-lg-3">
@@ -339,7 +339,8 @@
             </section>
         </div>
     </footer>
-
+    <!-- mes feuilles JS-->
+    <script type="text/javascript" src="public/JS/boutontopbts4.js"></script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
@@ -351,30 +352,7 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
         integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous">
     </script>
-    <!--js pout le btn-->
-    <script type="text/javascript">
-        //Get the button:
-        monbutton = document.getElementById("monBtn");
-
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () {
-            scrollFunction()
-        };
-
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                monbutton.style.display = "block";
-            } else {
-                monbutton.style.display = "none";
-            }
-        }
-
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0; // For Safari
-            document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
-        }
-    </script>
+    
 </body>
 
 </html>

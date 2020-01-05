@@ -1,4 +1,4 @@
-//js pour le btn top
+//js pour le btn-->
     <script type="text/javascript">
         //Get the button:
         monbutton = document.getElementById("monBtn");
