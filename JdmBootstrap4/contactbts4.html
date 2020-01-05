@@ -15,7 +15,7 @@
     <!--ma feuille de style-->
     
     <link rel="stylesheet" href="public/css/stylebts4.css">
-    <link rel="stylsheet" href="public/css/contactbts4.css">
+    <link rel="stylesheet" href="public/css/contactbts4.css">
 
 </head>
 
@@ -175,13 +175,17 @@
         </nav>
     </header>
 
-        <main class="container contact">
+        <main class="container p-4">
             <div class="row">
-                <section class="col-md-3">
-                    <div class="contact-info">
-                        <img src="https://image.ibb.co/kUASdV/contact-image.png" alt="image"/>
-                        <h2>Contact Us</h2>
-                        <h4>We would love to hear from you !</h4>
+                <section class="col-md-3 contact ">
+                    <div class="contact-info m-1">
+                        <img src="public/img/logo.png" alt="logo" class="img-fluid">
+                        <h2>Nous contactez</h2>
+                        <p>
+                        <h1 class="p-1">Jeux De Mômes</h1>
+                        <br>20 Avenue Winston Churchill,
+                        <br> 56000 VANNES<br>
+                        02.97.99.40.33</p>
                     </div>
                 </section>
                 <section class="col-md-9">
@@ -201,6 +205,13 @@
                             <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
                           </div>
                         </div>
+                        <!--tel-->
+                        <div class="form-group">
+                            <label class="control-label col-sm-2" for="email">Télephone:</label>
+                            <div class="col-sm-10">
+                              <input type="tel" class="form-control" id="tel" placeholder="Enter tel" name="tel">
+                            </div>
+                          </div>
                         <!--email-->
                         <div class="form-group">
                           <label class="control-label col-sm-2" for="email">Email:</label>
@@ -218,7 +229,7 @@
                         <!---btn validation-->
                         <div class="form-group">        
                           <div class="col-sm-offset-2 col-sm-10">
-                            <button type="submit" class="btn btn-default">Envoyez</button>
+                            <button type="submit" class="btn btn-outline-primary">Envoyez</button>
                           </div>
                         </div>
                     </form>
