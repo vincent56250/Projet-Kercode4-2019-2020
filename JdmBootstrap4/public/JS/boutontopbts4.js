@@ -1,6 +1,5 @@
 //js pour le btn-->
-    <script type="text/javascript">
-        //Get the button:
+            //Get the button:
         monbutton = document.getElementById("monBtn");
 
         // When the user scrolls down 20px from the top of the document, show the button
@@ -21,4 +20,4 @@
             document.body.scrollTop = 0; // For Safari
             document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
         }
-    </script>
+   
