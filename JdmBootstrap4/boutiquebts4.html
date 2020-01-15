@@ -18,7 +18,8 @@
         <!-- Load an icon library -->
         <link rel="stylesheet"
                 href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
+                <!-- fonts -->
+                <link href="https://fonts.googleapis.com/css?family=Dosis:800&display=swap" rel="stylesheet">
         <!--ma feuille de style-->
         <link rel="stylesheet" href="public/css/stylebts4.css">
         <link rel="stylesheet" href="public/css/boutiquebts4.css">
@@ -123,28 +124,23 @@
                                                                                 </header>
 
                                                                                 <!-- Modal body -->
-                                                                                <main class=" container modal-body">
+                                                                                <main class=" modal-body">
                                                                                         <div class="row">
-                                                                                                <section
-                                                                                                        class=" col-12 col-md-6 col-lg-6">
+                                                                                                <figure class=" col-12 col-md-6 col-lg-6">
                                                                                                         <img src="public/img/parent.jpg"
-                                                                                                                class="rounded-circle img-fluid img-border">
-                                                                                                </section>
-                                                                                                <section
-                                                                                                        class="col-12 col-md-6 col-lg-6">
+                                                                                                        class="rounded-circle img-fluid img-border">
+                                                                                                </figure>
+                                                                                                <figure class="col-12 col-md-6 col-lg-6">
                                                                                                         <img src="public/img/espace_enfant.jpg"
-                                                                                                                class="rounded-circle img-fluid img-border">
-                                                                                                </section>
+                                                                                                        class="rounded-circle img-fluid img-border">
+                                                                                                </figure>
                                                                                                 <hr>
                                                                                         </div>
 
                                                                                         <div class="row ">
-                                                                                                <section
-                                                                                                        class="col-12 col-md-6 col-lg-6">
-                                                                                                        <fieldset
-                                                                                                                class="inscription d-flex flex-wrap p-1">
-                                                                                                                <legend>M'inscrire
-                                                                                                                </legend>
+                                                                                                <form class="form-inline col-12 col-md-6 col-lg-6  justify-content-center">
+                                                                                                        <fieldset class="inscription  d-flex flex-wrap p-1">
+                                                                                                                <legend>M'inscrire </legend>
                                                                                                                 <!---------------nom/prenom---------------->
 
                                                                                                                 <p
@@ -166,12 +162,13 @@
                                                                                                                 <!------------date de naissance-------------->
                                                                                                                 <p
                                                                                                                         class="col-12">
-                                                                                                                        <label
+                                                                                                                        <label class="m-1"
                                                                                                                                 for="date">Date
                                                                                                                                 de
                                                                                                                                 Naissance</label>
                                                                                                                         <input type="date"
                                                                                                                                 id="date"
+                                                                                                                                class="form-control w-100"
                                                                                                                                 placeholder="votre date de naissance"
                                                                                                                                 required>
                                                                                                                 </p>
@@ -202,17 +199,13 @@
                                                                                                                 <button type="submit"
                                                                                                                         class="btn btn-outline-success btn-block">M'inscrire</button>
                                                                                                         </fieldset>
-                                                                                                </section>
-                                                                                                <section
-                                                                                                        class="col-12 col-md-6 col-lg-6">
-                                                                                                        <fieldset
-                                                                                                                class="p-3">
-                                                                                                                <legend>Me
-                                                                                                                        connecter
-                                                                                                                </legend>
+                                                                                                </form>
+                                                                                                <form class=" form-inline col-12 col-md-6 col-lg-6 justify-content-center">
+                                                                                                        <fieldset class="p-3">
+                                                                                                                <legend>Me connecter </legend>
                                                                                                                 <p
                                                                                                                         class="text-center">
-                                                                                                                        <label
+                                                                                                                        <label class="m-1"
                                                                                                                                 for="identifiant">Mon
                                                                                                                                 identifiant</label>
                                                                                                                         <input type="text"
@@ -221,7 +214,7 @@
                                                                                                                 </p>
                                                                                                                 <p
                                                                                                                         class="text-center">
-                                                                                                                        <label
+                                                                                                                        <label class="m-1"
                                                                                                                                 for="mdp">Votre
                                                                                                                                 mot
                                                                                                                                 de
@@ -230,11 +223,15 @@
                                                                                                                                 id="mdp"
                                                                                                                                 placeholder="password">
                                                                                                                 </p>
+                                                                                                                <p class="form-check form-check-inline">
+                                                                                                                        <input id="my-input" class="form-check-input" type="checkbox" name="" value="true">
+                                                                                                                        <label for="my-input" class="form-check-label">remember me</label>
+                                                                                                                </p>
                                                                                                                 <button type="submit"
                                                                                                                         class="btn btn-outline-success btn-block">Me
                                                                                                                         connectez</button>
                                                                                                         </fieldset>
-                                                                                                </section>
+                                                                                                </form>
                                                                                         </div>
                                                                                 </main>
 
@@ -272,20 +269,16 @@
                                 < </div> <div id="suivant" onclick="ChangeSlide(1)"> >
                         </div>
                 </section>
-        </header>
-
-        <main class="container-fluid">
-               
                 <!--------------------------------------------mega menu category hover---------------------------------------------------->
-                <nav id="menu_area" class="row menu-area">
+                <nav id="menu_area" class="menu-area">
                         <div class="navbar navbar-light navbar-expand-lg mainmenu">
                                 <button class="navbar-toggler" type="button" data-toggle="collapse"
                                         data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                                         aria-expanded="false" aria-label="Toggle navigation">
                                         <span class="navbar-toggler-icon"></span>
                                 </button>
-                                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                                        <ul class="navbar-nav mr-auto">
+                                <div class=" collapse navbar-collapse" id="navbarSupportedContent">
+                                        <ul class="navbar-nav ">
                                                 <li class="dropdown Professionels">
                                                         <a class="dropdown-toggle" href="#" id="navbarDropdown"
                                                                 role="button" data-toggle="dropdown"
@@ -296,48 +289,7 @@
                                                                 <li><a href="#">psychomotricite</a></li>
                                                                 <li><a href="#">Ergothérapie</a>
                                                                 <li><a href="#">petite enfance</a></li>
-                                                                <li><a href="#">Enseignement</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Enseignement</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown besoins_specifique">
@@ -346,50 +298,17 @@
                                                                 aria-haspopup="true" aria-expanded="false">Besoins
                                                                 spécifique</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Handicap ou Troubles visuels</a></li>
+                                                                <li><a href="#">Handicap ou Troubles auditifs</a></li>
+                                                                <li><a href="#">Handicap ou Retard Mental</a></li>
+                                                                <li><a href="#">Handicap ou Troubles Moteurs</a></li>
+                                                                <li><a href="#">Polyhandicap</a></li>
+                                                                <li><a href="#">Troubles du spectre de l’autisme</a></li>
+                                                                <li><a href="#">Troubles de l'Attention / Hyperactivité</a></li>
+                                                                <li><a href="#">Troubles DYS</a></li>
+                                                                <li><a href="#">Troubles sensoriels</a></li>
+                                                                <li><a href="#">Haut potentiel</a></li>
+                                                                <li><a href="#">Alzheimer</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown espaces_multisensoriels">
@@ -398,50 +317,11 @@
                                                                 aria-haspopup="true" aria-expanded="false">Espaces
                                                                 Multisensoriels</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Colonnes à bulles</a></li>
+                                                                <li><a href="#">Projecteurs & Veilleuses</a></li>
+                                                                <li><a href="#">Fibres optiques</a></li>
+                                                                <li><a href="#">Produits lumineux & UV</a></li>
+                                                                <li><a href="#">Mobilier & Luminaires</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown sensorialite ">
@@ -450,50 +330,15 @@
                                                                 aria-haspopup="true"
                                                                 aria-expanded="false">Sensorialité</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#"> 1er éveil</a></li>
+                                                                <li><a href="#">Montessori pour Tous</a></li>
+                                                                <li><a href="#">Jouets sensoriels</a></li>
+                                                                <li><a href="#">Relation de cause a effet</a></li>
+                                                                <li><a href="#">Balles sensorielles</a></li>
+                                                                <li><a href="#">Poupées et peluches Sensorielles</a></li>
+                                                                <li><a href="#">Stimulation poprioceptive</a></li>
+                                                                <li><a href="#">Massage, Relaxation & Produits Vibrants</a></li>
+                                                           
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown motricite">
@@ -501,50 +346,18 @@
                                                                 role="button" data-toggle="dropdown"
                                                                 aria-haspopup="true" aria-expanded="false">Motricité</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Parcours psychomoteurs</a></li>
+                                                                <li><a href="#"> Stimulation Vestibulaire</a></li>
+                                                                <li><a href="#">Jeux moteurs pour Tous</a></li>
+                                                                <li><a href="#">Balles & Ballons</a></li>
+                                                                <li><a href="#"> Motricité fine</a></li>
+                                                                <li><a href="#">Graphisme</a></li>
+                                                                <li><a href="#">Jeux de souffle</a></li>
+                                                                <li><a href="#">Outils de mastication</a></li>
+                                                                <li><a href="#">Motricité bucco-maxillaire</a></li>
+                                                                <li><a href="#">Intégration neurosensorielle: notre matériel de base</a></li>
+                                                                <li><a href="#" class="bg-warning">Intégration neurosensorielle</a></li>
+                                                                
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown language">
@@ -553,50 +366,15 @@
                                                                 aria-haspopup="true" aria-expanded="false">Language et
                                                                 Communication</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">voix, Articulation</a></li>
+                                                                <li><a href="#">Imagiers, jeux de langage</a></li>
+                                                                <li><a href="#">Préparation à la lecture</a></li>
+                                                                <li><a href="#">Apprentissage Lecture</a></li>
+                                                                <li><a href="#">Language Oral</a></li>
+                                                                <li><a href="#">Inférence,pragmatique, compréhension</a></li>
+                                                                <li><a href="#">Communication non verbale</a></li>
+                                                                <li><a href="#">Pictogrammes, langages visuels et signés</a></li>
+                                                                <li><a href="#">Conjugaison, grammaire et orthographe</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown apprentissage">
@@ -605,50 +383,15 @@
                                                                 aria-haspopup="true"
                                                                 aria-expanded="false">Apprentissage</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Jeux educatifs Sensoriels</a></li>
+                                                                <li><a href="#">Matériel Montessori & Reggio</a></li>
+                                                                <li><a href="#">Compétences visuelles</a></li>
+                                                                <li><a href="#">Mathématiques, formes & couleurs</a></li>
+                                                                <li><a href="#">Puzzles & Encastrements</a></li>
+                                                                <li><a href="#"> Jeux de logique, Casse-tête</a></li>
+                                                                <li><a href="#">Mémoire & Attention</a></li>
+                                                                <li><a href="#">Repérage spatio-temporel</a></li>
+                                                                <li><a href="#" class="bg-warning">Apprendre avec la méthode de singapour</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown competence_sociales">
@@ -657,50 +400,12 @@
                                                                 aria-haspopup="true" aria-expanded="false">Compétences
                                                                 Sociales</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Emotions & expressions Faciales</a></li>
+                                                                <li><a href="#">Habiletés sociales</a></li>
+                                                                <li><a href="#">Outils de motivation </a></li>
+                                                                <li><a href="#">Gestion du comportement</a></li>
+                                                                <li><a href="#">Fidgets</a></li>
+                                                                <li><a href="#">Bijoux à mordiller</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdow creativite">
@@ -709,50 +414,13 @@
                                                                 aria-haspopup="true"
                                                                 aria-expanded="false">Créativité</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Jeux de construction</a></li>
+                                                                <li><a href="#">Jeux d'imagination</a></li>
+                                                                <li><a href="#">Pâtes à modeler multisensorielles</a></li>
+                                                                <li><a href="#">Découpage</a></li>
+                                                                <li><a href="#">Dessins & Peinture</a></li>
+                                                                <li><a href="#">Musique pour tous </a></li>
+                                                                <li><a href="#">Danse, Chant & Théâtre</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown autonomie">
@@ -760,50 +428,16 @@
                                                                 role="button" data-toggle="dropdown"
                                                                 aria-haspopup="true" aria-expanded="false">Autonomie</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Aides quotidiennes</a></li>
+                                                                <li><a href="#">Aides au repas</a></li>
+                                                                <li><a href="#">Fournitures scolaires ergonomique</a></li>
+                                                                <li><a href="#">Espace Bureau Ergonomique</a></li>
+                                                                <li><a href="#">Timers & Planning</a></li>
+                                                                <li><a href="#">Routines & Supports d'affichage</a></li>
+                                                                <li><a href="#">Vêtements besoins spécifiques</a></li>
+                                                                <li><a href="#">Vêtements lesté & sensoriels</a></li>
+                                                                <li><a href="#">Contracteur & Contrôle Environnement</a></li>
+                                                                <li><a href="#"> Communicateur</a></li>
                                                         </ul>
                                                 </li>
                                                 <li class="dropdown inclusion">
@@ -812,74 +446,38 @@
                                                                 aria-haspopup="true"
                                                                 aria-expanded="false">Inclusions</a>
                                                         <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                                                <li><a href="#">Action</a></li>
-                                                                <li><a href="#">Another action</a></li>
-                                                                <li><a href="#">Something else here</a>
-                                                                </li>
-                                                                <li class="dropdown">
-                                                                        <a class="dropdown-toggle" href="#"
-                                                                                id="navbarDropdown" role="button"
-                                                                                data-toggle="dropdown"
-                                                                                aria-haspopup="true"
-                                                                                aria-expanded="false">Dropdown2</a>
-                                                                        <ul class="dropdown-menu"
-                                                                                aria-labelledby="navbarDropdown">
-                                                                                <li><a href="#">Action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Another
-                                                                                                action</a>
-                                                                                </li>
-                                                                                <li><a href="#">Something
-                                                                                                else
-                                                                                                here</a>
-                                                                                </li>
-                                                                                <li class="dropdown">
-                                                                                        <a class="dropdown-toggle"
-                                                                                                href="#"
-                                                                                                id="navbarDropdown"
-                                                                                                role="button"
-                                                                                                data-toggle="dropdown"
-                                                                                                aria-haspopup="true"
-                                                                                                aria-expanded="false">Dropdown3</a>
-                                                                                        <ul class="dropdown-menu"
-                                                                                                aria-labelledby="navbarDropdown">
-                                                                                                <li><a href="#">Action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Another
-                                                                                                                action</a>
-                                                                                                </li>
-                                                                                                <li><a href="#">Something
-                                                                                                                else
-                                                                                                                here</a>
-                                                                                                </li>
-                                                                                        </ul>
-                                                                                </li>
-                                                                        </ul>
-                                                                </li>
+                                                                <li><a href="#">Education à la diversité</a></li>
+                                                                <li><a href="#">Encourager la coopération</a></li>
+                                                                <li><a href="#">Création d'environnement inclusifs</a></li>
                                                         </ul>
                                                 </li>
                                         </ul>
                                 </div>
                         </div>
                 </nav>
-                 <!---------------------------fil d'ariane-------------------------->
-                 <ul class="list-inline">
+        </header>
+
+        <main class="container-fluid">
+
+
+                <!---------------------------fil d'ariane-------------------------->
+                <ul class="list-inline">
                         <li class="list-inline-item mr-2">
-                          <a class="u-link-v5 g-color-main" href="/"><i class="fa fa-home mr-1"></i>Home</a>
-                          <i class="fa fa-angle-right g-ml-7"></i>
+                                <a class="u-link-v5 g-color-main" href="/"><i class="fa fa-home mr-1"></i>Home</a>
+                                <i class="fa fa-angle-right g-ml-7"></i>
                         </li>
                         <li class="list-inline-item mr-2">
-                          <a class="u-link-v5 g-color-main" href="#">Article1</a>
-                          <i class="fa fa-angle-right g-ml-7"></i>
+                                <a class="u-link-v5 g-color-main" href="#">Article1</a>
+                                <i class="fa fa-angle-right g-ml-7"></i>
                         </li>
                         <li class="list-inline-item">
-                          <a class="u-link-v5 g-color-main" href="#">Article2</a>
-                          <i class="fa fa-angle-right g-ml-7"></i>
+                                <a class="u-link-v5 g-color-main" href="#">Article2</a>
+                                <i class="fa fa-angle-right g-ml-7"></i>
                         </li>
                         <li class="list-inline-item g-color-primary">
-                          <span>Article3</span>
+                                <span>Article3</span>
                         </li>
-                      </ul>
+                </ul>
                 <!-------------------------------------------------------------------->
                 <div class="row">
                         <section class="col-md-12 col-lg-12 d-flex ">
