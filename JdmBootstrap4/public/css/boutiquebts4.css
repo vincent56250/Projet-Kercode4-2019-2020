@@ -1,3 +1,9 @@
+/*couleur site
+ffaea0
+00a8ec(bleu)
+f59fbc(rose)
+f8f400(jaune)
+*/
 /*---------------slider------------------------*/
 #slider {
   position: relative;
@@ -79,8 +85,8 @@
   border: 0 solid rgba(0, 0, 0, .15);
   border-radius: 0;
   -webkit-box-shadow: none !important;
-  box-shadow: none !important
-  
+  box-shadow: none !important;
+
 }
 
 
@@ -106,39 +112,8 @@
 .navbar-default .navbar-nav>.show>a,
 .navbar-default .navbar-nav>.show>a:focus,
 .navbar-default .navbar-nav>.show>a:hover {
-  color: #fff;
-  background: #4CAF50;
+  color: #00a8ec; 
   outline: 0;
-}
-
-/*==========Sub Menu=v==========*/
-.mainmenu .collapse ul>li:hover>a {
-  background: #4CAF50;
-}
-
-.mainmenu .collapse ul ul>li:hover>a,
-.navbar-default .navbar-nav .show .dropdown-menu>li>a:focus,
-.navbar-default .navbar-nav .show .dropdown-menu>li>a:hover {
-  background: rgb(118, 187, 243);
-}
-
-.mainmenu .collapse ul ul ul>li:hover>a {
-  background: rgb(200, 245, 0);
-}
-
-.mainmenu .collapse ul ul,
-.mainmenu .collapse ul ul.dropdown-menu {
-  background: #1565C0;
-}
-
-.mainmenu .collapse ul ul ul,
-.mainmenu .collapse ul ul ul.dropdown-menu {
-  background: #1E88E5
-}
-
-.mainmenu .collapse ul ul ul ul,
-.mainmenu .collapse ul ul ul ul.dropdown-menu {
-  background: #64B5F6
 }
 
 /******************************Drop-down menu work on hover**********************************/
@@ -148,77 +123,12 @@
   margin: 0;
   padding: 0;
   min-height: 20px;
-
-  /* width: 100%; */
-}
-
-@media only screen and (min-width: 767px) {
-  .mainmenu .collapse ul li:hover>ul {
-    display: block
-  }
-
-  .mainmenu .collapse ul ul {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    min-width: 250px;
-    display: none
-  }
-
-  /*******/
-  .mainmenu .collapse ul ul li {
-    position: relative
-  }
-
-  .mainmenu .collapse ul ul li:hover>ul {
-    display: block
-  }
-
-  .mainmenu .collapse ul ul ul {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    /* min-width: 250px; */
-    display: none
-  }
-
-  /*******/
-  .mainmenu .collapse ul ul ul li {
-    position: relative
-  }
-
-  .mainmenu .collapse ul ul ul li:hover ul {
-    display: block
-  }
-
-  .mainmenu .collapse ul ul ul ul {
-    position: absolute;
-    top: 0;
-    left: -100%;
-    min-width: 250px;
-    display: none;
-    z-index: 1
-  }
-  
-}
-
-@media only screen and (max-width: 767px) {
-  .navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
-    padding: 16px 15px 16px 35px
-  }
-
-  .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
-    padding: 16px 15px 16px 45px
-  }
-  .navbar-collapse{
-    z-index: 2;
-    position: absolute;
-    background-color: white;
-    margin-top: 380px;
-    width: 100%;
-  }
 }
 /*----------------------------------*/
+.list-inline a{
+  text-decoration: none;
+  color: black;
+}
 .bouton {
   display: inline-block;
   text-align: center;
@@ -272,4 +182,72 @@
 
 .card-product .price-old {
   color: #999;
+}
+/*media mega menu*/
+@media only screen and (min-width: 767px) {
+  .mainmenu .collapse ul li:hover>ul {
+    display: block
+  }
+
+  .mainmenu .collapse ul ul {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 250px;
+    display: none
+  }
+
+  /*******/
+  .mainmenu .collapse ul ul li {
+    position: relative
+  }
+
+  .mainmenu .collapse ul ul li:hover>ul {
+    display: block
+  }
+
+  .mainmenu .collapse ul ul ul {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    /* min-width: 250px; */
+    display: none
+  }
+
+  /*******/
+  /* .mainmenu .collapse ul ul ul li {
+    position: relative
+  }
+
+  .mainmenu .collapse ul ul ul li:hover ul {
+    display: block
+  }
+
+  .mainmenu .collapse ul ul ul ul {
+    position: absolute;
+    top: 0;
+    left: -100%;
+    min-width: 250px;
+    display: none;
+    z-index: 1
+  } */
+  
+}
+
+@media only screen and (max-width: 767px) {
+  .navbar-nav .show .dropdown-menu .dropdown-menu>li>a {
+    padding: 16px 15px 16px 35px
+  }
+
+  .navbar-nav .show .dropdown-menu .dropdown-menu .dropdown-menu>li>a {
+    padding: 16px 15px 16px 45px
+  }
+  .navbar-collapse{
+    z-index: 2;
+    position: absolute;
+    background-color: rgb(247, 12, 12);
+    margin-top: 380px;
+    width: 100%;
+  }
+  
 }
