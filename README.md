@@ -80,3 +80,4 @@ Validation JS et Bootstrap du 20/12/2019
         Ajout du Slider en bootstrap avec des titres et boutons de liens ! (Nouveau !!!)  ou pur Slider javaScript si vous préférez
         modification des breakpoints (576(sm) et 992(lg)pour s'adapter à Bootstrap
         réalisation d'une fenêtre modale pour la connexion
+# pokeapi
